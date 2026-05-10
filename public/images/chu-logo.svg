@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#005EB8" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Medical cross -->
+  <g transform="translate(100, 100)">
+    <!-- Vertical bar -->
+    <rect x="-12" y="-45" width="24" height="90" fill="#ffffff" rx="3"/>
+    <!-- Horizontal bar -->
+    <rect x="-45" y="-12" width="90" height="24" fill="#ffffff" rx="3"/>
+    
+    <!-- Hospital shield background -->
+    <path d="M -55 30 L -55 -20 Q 0 -50 55 -20 L 55 30 Q 0 60 -55 30" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+</svg>
