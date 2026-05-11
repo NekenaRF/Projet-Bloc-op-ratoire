@@ -46,6 +46,47 @@ export interface PatientReveil {
   statut: string;
 }
 
+export interface NotificationCPA {
+  id: string;
+  heurePrescription: string;
+  patient: {
+    nom: string;
+    idDossier: string;
+  };
+  intervention: string;
+  chirurgien: {
+    initiales: string;
+    nom: string;
+  };
+  professeurCPA: string;
+  estUrgent: boolean;
+}
+
+export interface ScoreSCCRE {
+  motricite: number;
+  respiration: number;
+  pression: number;
+  conscience: number;
+  coloration: number;
+}
+
+export interface PatientSortie {
+  id: string;
+  nom: string;
+  prenom: string;
+  idDossier: string;
+  chambre: string;
+  intervention: string;
+  statut: 'stable' | 'instable' | 'critique';
+  scoreSCCRE: number;
+  heureValidation: string;
+}
+
+export type ServiceDestination = {
+  id: string;
+  label: string;
+};
+
 export interface FiltresPatient {
   statut: string;
   specialite: string;

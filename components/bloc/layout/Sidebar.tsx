@@ -6,16 +6,56 @@ import { usePathname } from "next/navigation";
 import { NavItem } from "@/types/bloc";
 
 const navItems: NavItem[] = [
-  { label: "Tableau de bord", href: "/bloc", icon: "dashboard" },
-  { label: "Patient du Jour", href: "/bloc/patient-du-jour", icon: "person" },
-  { label: "Activité avant opération", href: "/bloc/checklist-oms", icon: "preliminary" },
-  { label: "Activité pendant opération", href: "/bloc/activite-pendant-operation", icon: "medical_services" },
-  { label: "Après opération", href: "/bloc/apres-operation", icon: "assignment_turned_in" },
-  { label: "Salle de réveil", href: "/bloc/reveil", icon: "bed" },
-  { label: "Notification RDV CPA", href: "/bloc/notif-cpa", icon: "notification_important" },
-  { label: "Rendez-vous", href: "/bloc/rendez-vous", icon: "calendar_today" },
-  { label: "Archives", href: "/bloc/archives", icon: "inventory_2" },
-  { label: "Rapport", href: "/bloc/rapport", icon: "assessment" },
+  {
+    label: 'Notification RDV CPA',
+    href: '/bloc/notification-cpa',
+    icon: 'notification_important',
+  },
+  {
+    label: 'Rendez-vous',
+    href: '/bloc/rendez-vous',
+    icon: 'calendar_today',
+  },
+  {
+    label: 'Tableau de bord',
+    href: '/bloc',
+    icon: 'dashboard',
+  },
+  {
+    label: 'Patient du Jour',
+    href: '/bloc/patient-du-jour',
+    icon: 'person',
+  },
+  {
+    label: 'Activité avant opération',
+    href: '/bloc/avant-operation',
+    icon: 'preliminary',
+  },
+  {
+    label: 'Activité pendant opération',
+    href: '/bloc/pendant-operation',
+    icon: 'medical_services',
+  },
+  {
+    label: 'Après opération',
+    href: '/bloc/apres-operation',
+    icon: 'assignment_turned_in',
+  },
+  {
+    label: 'Salle de réveil',
+    href: '/bloc/salle-de-reveil',
+    icon: 'bed',
+  },
+  {
+    label: 'Archives',
+    href: '/bloc/archives',
+    icon: 'inventory_2',
+  },
+  {
+    label: 'Rapport',
+    href: '/bloc/rapport',
+    icon: 'assessment',
+  },
 ];
 
 export default function Sidebar() {
